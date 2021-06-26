@@ -112,6 +112,7 @@ function scrabbleScore(word) {
   let score = 0;
   for(let i = 0; i < word.length; i++){
   score += newPointStructure[word[i]];//this is comparing letter to key
+  //console.log(word)
 
    
   }

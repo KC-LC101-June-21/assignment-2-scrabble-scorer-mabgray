@@ -95,9 +95,11 @@ function transform(oldPointStructure) {
   let newPoints = {}
   for( let point in oldPointStructure ){//key on old value on new
     let letters = oldPointStructure[point];//indiv arrays in oldPointStructure
+    
     for(let i = 0; i < letters.length; i++){
       let letter = letters[i]//grabbing the letter.is the key
       newPoints[letter] = Number(point)// value in the oldPointStructure
+  
     }
 
   }
@@ -118,6 +120,11 @@ function scrabbleScore(word) {
   }
   return score;
 };
+
+
+
+
+
 
 
 function runProgram() {
